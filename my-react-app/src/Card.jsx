@@ -2,6 +2,9 @@ import React, {useState} from 'react';
 
 function Card() {
 
+  // For hiding/displaying the movie info
+  const [showMovieDetails, setShowMovieDetails] = useState(false);
+
   const [names, setNames] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -62,10 +65,15 @@ function Card() {
             <p className="radio-text">Intersection</p>
             </div>
           </div>
-          <button className="generate-button">Generate</button>
+          <button
+            className="generate-button"
+            onClick={() => setShowMovieDetails(true)}
+          >
+            Generate
+          </button>
         </div>
-
-        <div className="movie-container">
+        {showMovieDetails && (
+          <div className="movie-container">
           <p className="you-should-watch">You should watch</p>
           <div className="poster-container">
           <img className="movie-poster" src="https://a.ltrbxd.com/resized/sm/upload/cb/kc/9q/tm/g5G19q0xgkzWEvfcGo1KcL8nQOk-1200-1200-675-675-crop-000000.jpg?v=c77496f3f2" alt="Movie Poster">
@@ -82,6 +90,7 @@ function Card() {
           </div>
           <p className="letterboxd-url">View on Letterboxd</p>
         </div>
+        )}    
       </div>
     );
   }
