@@ -67,11 +67,19 @@ function Card() {
 
         <div className="movie-container">
           <p className="card-title">You should watch</p>
-          <img></img>
-          <p className="movie-title">Twin Peaks: Fire Walk with Me</p>
-          <p className="movie-year">1992</p>
-          <p className="movie-director">Directed by David Lynch</p>
-          <p className="movie-synopsis">In the questionable town of Deer Meadow, Washington, FBI Agent Desmond inexplicably disappears while hunting for the man who murdered a teen girl. The killer is never apprehended, and, after experiencing dark visions and supernatural encounters, Agent Dale Cooper chillingly predicts that the culprit will claim another life. Meanwhile, in the more cozy town of Twin Peaks, hedonistic beauty Laura Palmer hangs with lowlifes and seems destined for a grisly fate.</p>
+          <div className="poster-container">
+          <img className="movie-poster" src="https://a.ltrbxd.com/resized/sm/upload/cb/kc/9q/tm/g5G19q0xgkzWEvfcGo1KcL8nQOk-1200-1200-675-675-crop-000000.jpg?v=c77496f3f2" alt="Movie Poster">
+          </img>
+          </div>
+          <div className="movie-details">
+            <p className="movie-title">Twin Peaks: Fire Walk with Me</p>
+            <div className="director-year-container">
+              <p className="movie-year">1992</p>
+              <p className="movie-director">
+                <span className="directed-by">Directed by </span>David Lynch</p>
+            </div>
+            <p className="movie-synopsis">In the questionable town of Deer Meadow, Washington, FBI Agent Desmond inexplicably disappears while hunting for the man who murdered a teen girl. The killer is never apprehended, and, after experiencing dark visions and supernatural encounters, Agent Dale Cooper chillingly predicts that the culprit will claim another life. Meanwhile, in the more cozy town of Twin Peaks, hedonistic beauty Laura Palmer hangs with lowlifes and seems destined for a grisly fate.</p>
+          </div>
           <p className="letterboxd-url">View on Letterboxd</p>
         </div>
       </div>

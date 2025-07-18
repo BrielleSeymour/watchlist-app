@@ -6,7 +6,7 @@ body{
 .header{
   background-color: hsl(210, 20%, 16%);
   width: 100%;
-  padding: 8px;
+  padding: 2px;
   text-align: left; 
 }
 
@@ -14,6 +14,10 @@ body{
   max-width: 14%;
   height: auto;
   padding-left: 5px;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .container {
@@ -157,7 +161,93 @@ body{
   cursor: pointer;
 }
 
-.right-side {
-  flex: 1;
+.generate-button:hover {
+  background-color: orange;
+  transition: 0.3s;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
+  flex: 1;
+  color: white;
+}
+
+.card-title {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.poster-container {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.movie-details {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.movie-details p {
+  margin: 6px 0;
+}
+
+.director-year-container {
+  display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px
+}
+
+.movie-title {
+  font-family: "Inter", sans-serif;
+  font-size: x-large;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.movie-year {
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 100;
+}
+
+.movie-director {
+  font-family: "Inter", sans-serif;
+  font-size: large;
+  font-weight: 100;
+}
+
+.directed-by {
+  color: hsl(210, 20%, 67%);
+}
+
+.movie-synopsis {
+  font-family: "Inconsolata", monospace;
+  color: hsl(210, 20%, 67%);
+}
+
+.letterboxd-url {
+  font-family: "Inconsolata", monospace;
+  color: hsl(199, 89%, 60%);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-align: center;
+}
+
+.letterboxd-url:hover {
+  cursor: pointer;
+  color: orange;
+  transition: 0.3s;
 }
