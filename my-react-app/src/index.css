@@ -31,7 +31,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* Vertical spacing between elements */
+  gap: 30px;
   font-family: "Inter", sans-serif;
   font-weight: lighter;
   color: white;
@@ -46,10 +46,20 @@ body{
 .card-title {
   font-size: xx-large;
   font-weight: 400;
+  margin-bottom: 0;
+}
+
+.you-should-watch {
+  font-size: xx-large;
+  font-weight: 400;
+  margin-bottom: 20;
+  font-family: "Inter", sans-serif;
 }
 
 .instruction-text {
   font-family: "Inconsolata", monospace;
+  width: 80%;
+  font-size: small;
   text-align: center;
   font-optical-sizing: auto;
   font-weight: lighter;
@@ -170,7 +180,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   flex: 1;
   color: white;
 }
@@ -183,7 +193,7 @@ body{
 .poster-container {
   display: flex;
   justify-content: center;
-  width: 65%;
+  width: 60%;
 }
 
 .movie-poster {
@@ -193,7 +203,7 @@ body{
 }
 
 .movie-details {
-  width: 65%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -236,6 +246,8 @@ body{
 .movie-synopsis {
   font-family: "Inconsolata", monospace;
   color: hsl(210, 20%, 67%);
+  font-size: small;
+  font-weight: 200;
 }
 
 .letterboxd-url {

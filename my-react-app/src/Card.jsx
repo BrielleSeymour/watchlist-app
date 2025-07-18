@@ -66,7 +66,7 @@ function Card() {
         </div>
 
         <div className="movie-container">
-          <p className="card-title">You should watch</p>
+          <p className="you-should-watch">You should watch</p>
           <div className="poster-container">
           <img className="movie-poster" src="https://a.ltrbxd.com/resized/sm/upload/cb/kc/9q/tm/g5G19q0xgkzWEvfcGo1KcL8nQOk-1200-1200-675-675-crop-000000.jpg?v=c77496f3f2" alt="Movie Poster">
           </img>
